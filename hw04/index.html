@@ -154,7 +154,8 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這一次的作業是文生圖，使用的是文生圖工具ComfyUI，透過圖形畫的介面，把每個Block連在一起，建立工作流，並產生AI圖象，在找尋自己喜歡的Lora時，更了解Lora的重要性，和在AI中扮演的重要角色，
+      最後根據主題成功生成芙莉蓮的圖像，我自己住要是在Local運作。
     </div>
   </div>
 
@@ -170,22 +171,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成ComfyUI建置</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 完成芙莉蓮文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 替換模型完成辛梅爾文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,18 +196,64 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="ComfyUI.jpg" width="100%"/>
+        </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty"> 
+      <figure>
+        <figcaption>完成芙莉蓮Checkpoint、LoRA文生圖</figcaption>
+        <a href="https://civitai.com/models/1188071?modelVersionId=1337429">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1209474/a4-test?modelVersionId=1373925">LoRA連結</a>
+        <p>1344 * 768</p>
+        <p>LoRA Strength : 1.0</p>
+        <p>Positive：masterpiece, best quality, high score, great score, absurdres, illustration, 
+          pointy ears, 1girl, solo, frieren, sousou no frieren, long hair, 1boy, flower, 
+          head wreath, smile, petals, earrings, jewelry, shirt, elf, blue flower, outdoors, 
+          green eyes, upper body, long sleeves, striped shirt, striped, sky, solo focus, closed mouth, 
+          white hair, falling petals, glowing, &lt;lora:mix-a4-v2:1&gt;,
+        </p>
+        <p>Negative：nsfw,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,
+          low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,artist name,worst quality, bad hands,
+          extra digits, displeasing, worst aesthetic, old, early, recent, simple eyes, simple shading, simple drawing, simple face, 
+          simple coloring, mismatched pupils, artist name, text, signature
+        </p>
+        <img src="img1.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>替換Ckeckpoint、LoRA完成辛梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/315596/pd-for-anime">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/images/52809878">LoRA連結1</a>
+        <br>
+        <p>1344 * 768</p>
+        <p>LoRA1 Strength : 0.8</p>
+        <p>Frieren,himmel, long platinum blonde hair, blue eyes, elf ears, small and delicate, white and blue robes, gentle reserved expression, Himmel, short blue hair, deep blue eyes, shining knight's armor, muscular build, calm and composed expression, two people only, looking at each other warmly, close-up, from side, sitting together, beach and waves in the background, space station atmosphere, colorful, multicolored background, blending, flat color, no lineart, negative space, ultraviolet light, chromatic aberration, freckles, t-shirt, wariza, raised eyebrow, masterpiece, best quality, very awa, absurdres
+<lora:noobai_vpred_1_blending_v1:0.2> <lora:noobai_vpred_1_flat_color_v2:0.2>
 
+        </p>
+        <p>(worst quality, low quality, sketch:1.1), error, bad anatomy, bad hands, watermark, ugly, distorted, censored, lowres, abstract, signature, bkub, white outline
+        </p>
+        <img src="img2.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {
